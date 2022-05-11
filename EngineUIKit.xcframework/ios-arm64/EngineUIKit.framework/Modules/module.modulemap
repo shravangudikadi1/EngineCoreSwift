@@ -1,0 +1,11 @@
+framework module EngineUIKit {
+  umbrella header "EngineUIKit.h"
+
+  export *
+  module * { export * }
+}
+
+module EngineUIKit.Swift {
+    header "EngineUIKit-Swift.h"
+    requires objc
+}
