@@ -4,13 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>CollectionViewCell.nib</key>
+		<data>
+		PLh/ctr2NWKL3iNLbsublxJ/0ng=
+		</data>
+		<key>Headers/CollectionViewCell.xib</key>
+		<data>
+		9cfEJKN7L7dw5u7o3w8Cd34mcpk=
+		</data>
 		<key>Headers/EngineUIKit-Swift.h</key>
 		<data>
-		XHgWS3ugJ8cNrekH3P3AtDX3JKU=
+		yD9UytH9vkCW0Mlwr/D+DfCwlZE=
 		</data>
 		<key>Headers/EngineUIKit.h</key>
 		<data>
 		mqstLhqzBxM3954sgKNPMVfNBAU=
+		</data>
+		<key>Headers/PagingCollectionView.xib</key>
+		<data>
+		zPXxmNoum/VrV+gcySQZR7a6a+U=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -22,11 +34,11 @@
 		</data>
 		<key>Modules/EngineUIKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		r7NZPqukrjR/xPsQAwZxtJbEKSQ=
+		/g4HAJRsvtGNRQIoXe2zv1Pxj8Q=
 		</data>
 		<key>Modules/EngineUIKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EP+JbBMnIiffBgDyPwJMNLrEI9U=
+		HEVl6Xnwrzwu6vHCY9km4bFzVl0=
 		</data>
 		<key>Modules/EngineUIKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +46,11 @@
 		</data>
 		<key>Modules/EngineUIKit.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		r7NZPqukrjR/xPsQAwZxtJbEKSQ=
+		/g4HAJRsvtGNRQIoXe2zv1Pxj8Q=
 		</data>
 		<key>Modules/EngineUIKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		EP+JbBMnIiffBgDyPwJMNLrEI9U=
+		HEVl6Xnwrzwu6vHCY9km4bFzVl0=
 		</data>
 		<key>Modules/EngineUIKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +58,11 @@
 		</data>
 		<key>Modules/EngineUIKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Apar4xxHdYVWcUUXXyCKG/Jb/6E=
+		PztDA6os5FqujYpYVG9+djhSNro=
 		</data>
 		<key>Modules/EngineUIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		h/IRlsPaOXhlRdVHHhzEDTuKBfQ=
+		81oBgtBHMDLVPaQ2VN6oXLXnvoA=
 		</data>
 		<key>Modules/EngineUIKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -58,24 +70,42 @@
 		</data>
 		<key>Modules/EngineUIKit.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		Apar4xxHdYVWcUUXXyCKG/Jb/6E=
+		PztDA6os5FqujYpYVG9+djhSNro=
 		</data>
 		<key>Modules/EngineUIKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		h/IRlsPaOXhlRdVHHhzEDTuKBfQ=
+		81oBgtBHMDLVPaQ2VN6oXLXnvoA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		izJ9OIJg4EXRpQPCZ6etQxjpB7Q=
 		</data>
+		<key>PagingCollectionView.nib</key>
+		<data>
+		pQSZ/cE6kt8oGtdEx449QJQSKEs=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>CollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			b6o+BLqmoxKStBY1miFPOa/PtsnAkJQKETYIiXMerJg=
+			</data>
+		</dict>
+		<key>Headers/CollectionViewCell.xib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nDznY0Qy32dbWvC9iYDDgWD83i02X8dCVScJq/yUOWc=
+			</data>
+		</dict>
 		<key>Headers/EngineUIKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EMrbMLagvWjK5jIrjjLkuqWPKiWxpS5P6Zi4QvY8cVo=
+			I0mWPgaod0Dwqjc+YFbywDLnXEAMfpL1jk2h4+K5kxw=
 			</data>
 		</dict>
 		<key>Headers/EngineUIKit.h</key>
@@ -83,6 +113,13 @@
 			<key>hash2</key>
 			<data>
 			q/i1cNbs//FFMduXTk2F7dgc1fDUqnUO40eiTTEcFeg=
+			</data>
+		</dict>
+		<key>Headers/PagingCollectionView.xib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3llB5mQvKYgiriyF5xvqse9cGp/QViZyx73ZFs4VmXc=
 			</data>
 		</dict>
 		<key>Modules/EngineUIKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -96,14 +133,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1+uU995h4sRMTxde7gJi0WBaykMvnyiAp2o70bh1IVc=
+			et2TYDkZM67e0Hgm8xjmdNoYxCPGoIc3b/7AQxY+dwA=
 			</data>
 		</dict>
 		<key>Modules/EngineUIKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8UTxjgxU7pdo1DOpOJ4tmwqSmZM+ybOgz9dFeTH1GF8=
+			rXuipss3Ej130N6MRYYGt5yQOMPzpHamRqICXg1t2FE=
 			</data>
 		</dict>
 		<key>Modules/EngineUIKit.swiftmodule/arm64.swiftdoc</key>
@@ -117,14 +154,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1+uU995h4sRMTxde7gJi0WBaykMvnyiAp2o70bh1IVc=
+			et2TYDkZM67e0Hgm8xjmdNoYxCPGoIc3b/7AQxY+dwA=
 			</data>
 		</dict>
 		<key>Modules/EngineUIKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8UTxjgxU7pdo1DOpOJ4tmwqSmZM+ybOgz9dFeTH1GF8=
+			rXuipss3Ej130N6MRYYGt5yQOMPzpHamRqICXg1t2FE=
 			</data>
 		</dict>
 		<key>Modules/EngineUIKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -138,14 +175,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VsvikfQ0T6gsn4YLieenl2NwJt0F3LfcCzcTrXo2nVo=
+			Qe61Ztca5bw5iSjn/EBoHLFxTNn9Q0PR38uTm4pADSE=
 			</data>
 		</dict>
 		<key>Modules/EngineUIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DJX6QpYovCP43SIxo2ORaK0JiTqx22Z9RP3Bt+L/lUY=
+			/p2zELO2vu26BEL9vcoR8bAzpeaSwskzUqo9m8uBbnA=
 			</data>
 		</dict>
 		<key>Modules/EngineUIKit.swiftmodule/x86_64.swiftdoc</key>
@@ -159,14 +196,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VsvikfQ0T6gsn4YLieenl2NwJt0F3LfcCzcTrXo2nVo=
+			Qe61Ztca5bw5iSjn/EBoHLFxTNn9Q0PR38uTm4pADSE=
 			</data>
 		</dict>
 		<key>Modules/EngineUIKit.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DJX6QpYovCP43SIxo2ORaK0JiTqx22Z9RP3Bt+L/lUY=
+			/p2zELO2vu26BEL9vcoR8bAzpeaSwskzUqo9m8uBbnA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -174,6 +211,13 @@
 			<key>hash2</key>
 			<data>
 			VPM9S3jx1U1eq6XyQgHvu0v68+UxB5vB76qhrsC+Niw=
+			</data>
+		</dict>
+		<key>PagingCollectionView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pDPe1p9L2XH8MJS510EUatsOIjT11RRH4FUmbXWKrKU=
 			</data>
 		</dict>
 	</dict>

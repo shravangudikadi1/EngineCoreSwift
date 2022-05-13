@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PagingCollectionView" customModule="EngineUIKit" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="PagingCollectionView" id="zU9-ks-nnh" customClass="PagingCollectionView" customModule="EngineUIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sNV-JD-JXo">
+                    <rect key="frame" x="0.0" y="44" width="414" height="150"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="yU6-kf-nPh"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bwr-g2-o1K">
+                        <size key="itemSize" width="411" height="227.5"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="zU9-ks-nnh" id="SNl-Fd-Jf3"/>
+                        <outlet property="delegate" destination="zU9-ks-nnh" id="YJN-Iz-I2M"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4oz-IW-HHg">
+                    <rect key="frame" x="20" y="163" width="374" height="26"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ghu-0T-g0R"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4oz-IW-HHg" firstAttribute="leading" secondItem="ghu-0T-g0R" secondAttribute="leading" constant="20" id="6Dd-zp-tUQ"/>
+                <constraint firstItem="sNV-JD-JXo" firstAttribute="leading" secondItem="ghu-0T-g0R" secondAttribute="leading" id="UV9-H7-Rcn"/>
+                <constraint firstItem="4oz-IW-HHg" firstAttribute="bottom" secondItem="sNV-JD-JXo" secondAttribute="bottom" constant="-5" id="ZGa-EA-PWA"/>
+                <constraint firstItem="sNV-JD-JXo" firstAttribute="trailing" secondItem="ghu-0T-g0R" secondAttribute="trailing" id="dz5-Jh-lee"/>
+                <constraint firstItem="sNV-JD-JXo" firstAttribute="top" secondItem="ghu-0T-g0R" secondAttribute="top" id="h3x-04-l8j"/>
+                <constraint firstItem="ghu-0T-g0R" firstAttribute="trailing" secondItem="4oz-IW-HHg" secondAttribute="trailing" constant="20" id="nIp-wU-VA7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pageView" destination="4oz-IW-HHg" id="LaK-DJ-hzM"/>
+                <outlet property="sliderCollectionView" destination="sNV-JD-JXo" id="PZ7-dE-Rk7"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="-1061.3839285714284"/>
+        </view>
+    </objects>
+</document>

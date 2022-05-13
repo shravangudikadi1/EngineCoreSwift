@@ -11,9 +11,8 @@
 		C114DB0A282B0C310060D19A /* EngineCoreSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C114DAFF282B0C310060D19A /* EngineCoreSwift.framework */; };
 		C114DB0F282B0C310060D19A /* EngineCoreSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114DB0E282B0C310060D19A /* EngineCoreSwiftTests.swift */; };
 		C114DB10282B0C310060D19A /* EngineCoreSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = C114DB02282B0C310060D19A /* EngineCoreSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C114DB46282B20960060D19A /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114DB45282B20960060D19A /* Sample.swift */; };
-		C1192A17282C542200C9A05E /* EngineUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1192A15282C541A00C9A05E /* EngineUIKit.xcframework */; };
-		C1192A18282C542200C9A05E /* EngineUIKit.xcframework in Manual copy */ = {isa = PBXBuildFile; fileRef = C1192A15282C541A00C9A05E /* EngineUIKit.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C1192A31282D6E8800C9A05E /* EngineCoreBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A30282D6E8800C9A05E /* EngineCoreBase.swift */; };
+		C1192A4D282DBFC500C9A05E /* EngineUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1192A4C282DBFC500C9A05E /* EngineUIKit.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C1192A18282C542200C9A05E /* EngineUIKit.xcframework in Manual copy */,
 			);
 			name = "Manual copy";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,8 +44,8 @@
 		C114DB03282B0C310060D19A /* EngineCoreSwift.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EngineCoreSwift.docc; sourceTree = "<group>"; };
 		C114DB09282B0C310060D19A /* EngineCoreSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EngineCoreSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C114DB0E282B0C310060D19A /* EngineCoreSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineCoreSwiftTests.swift; sourceTree = "<group>"; };
-		C114DB45282B20960060D19A /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
-		C1192A15282C541A00C9A05E /* EngineUIKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = EngineUIKit.xcframework; sourceTree = "<group>"; };
+		C1192A30282D6E8800C9A05E /* EngineCoreBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineCoreBase.swift; sourceTree = "<group>"; };
+		C1192A4C282DBFC500C9A05E /* EngineUIKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = EngineUIKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1192A17282C542200C9A05E /* EngineUIKit.xcframework in Frameworks */,
+				C1192A4D282DBFC500C9A05E /* EngineUIKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +92,7 @@
 			children = (
 				C114DB02282B0C310060D19A /* EngineCoreSwift.h */,
 				C114DB03282B0C310060D19A /* EngineCoreSwift.docc */,
-				C114DB45282B20960060D19A /* Sample.swift */,
+				C1192A30282D6E8800C9A05E /* EngineCoreBase.swift */,
 			);
 			path = EngineCoreSwift;
 			sourceTree = "<group>";
@@ -110,7 +108,7 @@
 		C114DB42282B20610060D19A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C1192A15282C541A00C9A05E /* EngineUIKit.xcframework */,
+				C1192A4C282DBFC500C9A05E /* EngineUIKit.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -247,8 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1192A31282D6E8800C9A05E /* EngineCoreBase.swift in Sources */,
 				C114DB04282B0C310060D19A /* EngineCoreSwift.docc in Sources */,
-				C114DB46282B20960060D19A /* Sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +418,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.engineMedia.EngineCoreSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -455,7 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.engineMedia.EngineCoreSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
