@@ -25,6 +25,24 @@ public protocol ImageCarouselViewDelegate : ObjectiveC.NSObjectProtocol {
   }
   @objc deinit
 }
+public protocol CustomSegmentedControlDelegate : ObjectiveC.NSObjectProtocol {
+  func change(to index: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CustomSegmentedControl : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var selectorView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) public var textColor: UIKit.UIColor?
+  @_Concurrency.MainActor(unsafe) public var textFont: UIKit.UIFont?
+  @_Concurrency.MainActor(unsafe) public var selectorViewColor: UIKit.UIColor?
+  @_Concurrency.MainActor(unsafe) public var selectorTextColor: UIKit.UIColor?
+  @_Concurrency.MainActor(unsafe) public var selectorTextFont: UIKit.UIFont?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: EngineUIKit.CustomSegmentedControlDelegate?
+  @_Concurrency.MainActor(unsafe) public var selectedIndex: Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) public func setButtonTitles(buttonTitles: [Swift.String])
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
 public class FixedActionTileViewModel {
   public init(title: Swift.String, image: Swift.String)
   @objc deinit

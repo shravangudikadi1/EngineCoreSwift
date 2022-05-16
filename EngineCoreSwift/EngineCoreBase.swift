@@ -14,6 +14,7 @@ public class EngineCoreBase: NSObject {
     
    public var delegate: CarouselViewDelegate?
    public var viewModel: EngineUIKit.FixedActionTileViewModel?
+   public var segmentedControlDelegate: SegmentedTapDelegate?
     
     public override init() {}
     
@@ -38,6 +39,20 @@ public class EngineCoreBase: NSObject {
         pageView.configureView(images)
         return pageView
     }
+    
+    public func segmentedControlView(titles: [String], selectedIndex: Int, selectorView: UIView, selectorTextFont: UIFont, selectorTextColor: UIColor, selectorViewColor: UIColor, textFont: UIFont, textColor: UIColor, delegate: SegmentedTapDelegate) -> UIView {
+        let view = EngineUIKit.CustomSegmentedControl()
+        view.setButtonTitles(buttonTitles: titles)
+        view.selectedIndex = selectedIndex
+        view.selectorView = selectorView
+        view.selectorTextFont = selectorTextFont
+        view.selectorTextColor = selectorTextColor
+        view.selectorViewColor = selectorViewColor
+        view.textFont = textFont
+        view.textColor = textColor
+        view.delegate = self
+        return view
+    }
 }
 
 
@@ -47,6 +62,22 @@ extension EngineCoreBase: EngineUIKit.ImageCarouselViewDelegate {
     }
 }
 
+extension EngineCoreBase: EngineUIKit.CustomSegmentedControlDelegate  {
+    
+    public func change(to index: Int) {
+        self.segmentedControlDelegate?.change(to: index)
+    }
+    
+}
+
+
+
 public protocol CarouselViewDelegate {
     func CarouselView(_ imageCarouselView: ImageCarouselView, didShowImageAt index: Int)
+}
+
+public protocol SegmentedTapDelegate {
+    
+    func change(to index:Int)
+    
 }
